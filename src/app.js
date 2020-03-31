@@ -39,7 +39,7 @@ app.get('/movie', function handleMovies(req, res) {
   }
 
   if (country) {
-    response = response.filter(movie => movie.country.toUpperCase.includes(country.toUpperCase()));
+    response = response.filter(movie => movie.country.toUpperCase().includes(country.toUpperCase()));
   }
 
   if (avg_vote) {
